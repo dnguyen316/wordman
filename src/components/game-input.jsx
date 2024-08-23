@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 const GameInput = ({ onSubmit, disabled, ...props }) => {
   return (
     <form
@@ -26,4 +28,4 @@ const GameInput = ({ onSubmit, disabled, ...props }) => {
   );
 };
 
-export default GameInput;
+export default memo(GameInput);

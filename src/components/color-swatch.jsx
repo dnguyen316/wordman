@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 const ColorSwatch = ({ color, ...props }) => {
   return (
     <div
@@ -8,4 +10,4 @@ const ColorSwatch = ({ color, ...props }) => {
   );
 };
 
-export default ColorSwatch;
+export default memo(ColorSwatch);
